@@ -5,6 +5,7 @@
 # A Marvel Comics disponibiliza uma API onde estes dados podem ser encontrados, 
 # você deve se registrar na plataforma da Marvel para ter acesso a sua API, de 
 # forma gratuita, através do link: https://developer.marvel.com 
+
 Libraries:
     ✔ Typescript @done(20-09-17 12:38)
     ✔ Eslint @done(20-09-17 12:38)
