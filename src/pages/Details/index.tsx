@@ -1,6 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { FaArrowLeft } from 'react-icons/fa'
-import { useHistory, Link } from 'react-router-dom'
+import { useHistory, Link, Redirect } from 'react-router-dom'
 
 import imageClean from '../../assets/clean.jpg'
 import Header from '../../components/Header'
@@ -44,11 +44,9 @@ const Details = () => {
   } = useContext(ComicsContext)
   const history = useHistory()
 
-  useEffect(() => {
-    if (!activeComic.id) {
-      history.goBack()
-    }
-  }, [])
+  if (!activeComic.id) {
+    return <Redirect to={'/'} />
+  }
 
   const handleGoBack = () => history.goBack()
   return (
@@ -60,7 +58,6 @@ const Details = () => {
             <FaArrowLeft style={{ fill: '#f00' }} /> Back To Comics
           </button>
         </DetailTopBar>
-
         <BacgroundWrap>
           <ItemBacground>
             <img

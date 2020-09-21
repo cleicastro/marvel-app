@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext } from 'react'
 import marvel from '../services/marvel'
 import { ComicsContext, ACTIONS } from '../context/Comics'
@@ -13,7 +14,6 @@ export const useRequestCharacters = () => {
       try {
         const result = await marvel.getCharacters(params)
         const { id } = result.data.data.results[0]
-        console.log(id)
 
         if (id) {
           const resultComics = await marvel.getComics({
@@ -27,7 +27,6 @@ export const useRequestCharacters = () => {
           })
         }
       } catch (error) {
-        console.log(error)
         alert('sorry for the inconvenience')
       }
     }

@@ -1,9 +1,7 @@
-import React, { useContext, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
 
-import { ComicsContext, ACTIONS } from '../../context/Comics'
+import { ComicsContext } from '../../context/Comics'
 import { Comic } from '../../components/ListComicsItem'
-import marvel from '../../services/marvel'
 import imageClean from '../../assets/clean.jpg'
 
 import {

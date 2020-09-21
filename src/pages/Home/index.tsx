@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable indent */
-import React, { useContext, useMemo } from 'react'
+import React, { useContext } from 'react'
 
 import InfiniteScroll from 'react-infinite-scroller'
 
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
   } = useContext(ComicsContext)
   const limit = 10
   const requestComics = useRequestComics(limit)
-  const nextPage = usePaginationComics(limit, pagination.offset)
+  const nextPage = usePaginationComics()
 
   if (comics.length === 0) {
     requestComics()
@@ -26,10 +27,9 @@ const Home: React.FC = () => {
 
   const handlePagination = async () => {
     if (pagination.nextPage > 0) {
-      nextPage()
+      nextPage(limit, pagination.nextPage)
     }
   }
-
   return (
     <Container>
       <Banner />

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 import api from './apiConfig'
 const tonkenPlubic = process.env.REACT_APP_TOKEN_PUBLIC_API
 const tokenHash = process.env.REACT_APP_TOKEN_HASH_GENERATOR
@@ -34,7 +35,6 @@ export interface ParamsComics {
 }
 
 const marvel = {
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   getComics: (params: ParamsComics) => {
     return api.get('v1/public/comics', {
       params: {
