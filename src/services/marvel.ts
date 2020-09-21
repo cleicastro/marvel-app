@@ -36,6 +36,7 @@ export interface ParamsComics {
 
 const marvel = {
   getComics: (params: ParamsComics) => {
+    console.log({ ts: timestamp, apikey: tonkenPlubic, hash: tokenHash })
     return api.get('v1/public/comics', {
       params: {
         ts: timestamp,
