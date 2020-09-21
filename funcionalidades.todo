@@ -1,10 +1,10 @@
 # DESAFIO
 
-# Queremos que você desenvolva um catálogo de quadrinhos da Marvel Comics, e, 
-# para isso será necessário que você desenvolva o front-end desta aplicação. 
-# A Marvel Comics disponibiliza uma API onde estes dados podem ser encontrados, 
-# você deve se registrar na plataforma da Marvel para ter acesso a sua API, de 
-# forma gratuita, através do link: https://developer.marvel.com 
+# Queremos que você desenvolva um catálogo de quadrinhos da Marvel Comics, e,
+# para isso será necessário que você desenvolva o front-end desta aplicação.
+# A Marvel Comics disponibiliza uma API onde estes dados podem ser encontrados,
+# você deve se registrar na plataforma da Marvel para ter acesso a sua API, de
+# forma gratuita, através do link: https://developer.marvel.com
 
 Libraries:
     ✔ Typescript @done(20-09-17 12:38)
@@ -12,21 +12,30 @@ Libraries:
     ✔ Styled Components @done(20-09-17 12:38)
     ✔ React Infinite Scroller @done(20-09-17 12:46)
     ✔ Axios @done(20-09-17 13:10)
+    ✔ React Router Dom @done(20-09-17 17:55)
+    ✔ React loadin-skeletron @done(20-09-20 19:02)
 
 Requisitos necessários:
-    ☐ Listagem dos quadrinhos. 
-    ☐ Título, imagem, thumbnail e autores.
-    ☐ Paginação dos quadrinhos. 
-    ☐ Grid dos quadrinhos em 10 e 10. 
-    ☐ Pesquisa por personagem. 
-    ☐ Pesquisa através do nome do personagem em inglês. 
-    ☐ Detalhe dos quadrinhos. 
-    ☐ Botão ou mecanismo similar para abertura de uma nova página com detalhes do quadrinho.
+    ✔ Listagem dos quadrinhos. @done(20-09-20 10:50)
+    ✔ Título, imagem, thumbnail e autores. @done(20-09-20 10:50)
+    ✔ Paginação dos quadrinhos. @done(20-09-21 04:00)
+    ✔ Grid dos quadrinhos em 10 e 10. @done(20-09-20 10:50)
+    Pesquisa por personagem.
+    ✔ Pesquisa através do nome do personagem em inglês. @done(20-09-21 04:00)
+    Detalhe dos quadrinhos.
+    ✔ Botão ou mecanismo similar para abertura de uma nova página com detalhes do quadrinho. @done(20-09-20 10:50)
 
 Extas:
-    ☐ Boas práticas de codificação.
-    ☐ Cobertura de testes.
-    ☐ Aplicação responsiva.
+    ✔ Boas práticas de codificação. @done(20-09-21 04:00)
+    ✔ Cobertura de testes. @done(20-09-20 13:01)
+    ✔ Aplicação responsiva. @done(20-09-20 13:01)
+
+
+    REACT_APP_URL_API=https://gateway.marvel.com/
+    REACT_APP_TOKEN_PUBLIC_API=3c1906a4cacf951772c5998799f4bbc2
+    REACT_APP_TOKEN_PRIVATE_API=92f784035cb839b9ec96de215e588249e2ac1517
+    REACT_APP_TOKEN_HASH_GENERATOR=e4c4ecd0fdffc31e8dd747eca5244850
+    REACT_APP_TIMESTAMP=1
 
 
 
