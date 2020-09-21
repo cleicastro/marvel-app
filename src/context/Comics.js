@@ -23,7 +23,6 @@ const INITIAL_STATE = {
 function comicsReduce(state, action) {
   switch (action.type) {
     case ACTIONS.COMICS:
-      console.log(action.payload)
       return {
         ...state,
         comics: [...state.comics, ...action.payload.results],
