@@ -42,7 +42,7 @@ const Home: React.FC = () => {
             loadMore={handlePagination}
             loader={
               <Wrapper key={0}>
-                {[...Array(limit / 2)].map((elementInArray, index) => (
+                {[...Array(4)].map((elementInArray, index) => (
                   <Skeleton key={index} />
                 ))}
               </Wrapper>

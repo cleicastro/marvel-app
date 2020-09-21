@@ -1,44 +1,83 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1 align="center">
+  <img alt="Marvel Heroes" title="Fitness Calculator" src="https://marvel-app-chi.vercel.app/static/media/logo.c3750ab2.svg" width="150" />
+</h1>
 
-In the project directory, you can run:
+<h2 align="center">
+  Marvel App
+</h2>
 
-### `npm start`
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## :iphone: About
 
-### `npm test`
+Este é um projeto pessoal construído para fins de aprendizagem utilizando a API oficial da Marvel.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades
 
-### `npm run build`
+- Listagem dos quadrinhos com grid em 10 e 10
+- Pesquisa através do nome do personagem
+- Paginação dos quadrinhos
+- Pagina de detalhes do quadrinho
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Construído com
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- React JS
+- ES6
+- Typescript
+- Styled Components
+- Axios
+- React Infinite Scroller
+- Eslint
+- Node JS V12.18.4
+- Jest
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :framed_picture: Telas da aplicação
 
-### `npm run eject`
+<h1 align="center">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img width="945" alt="header" src="https://user-images.githubusercontent.com/50046577/93751857-22943c00-fbd4-11ea-8a97-9802f27e3213.png">
+<img width="943" alt="detail" src="https://user-images.githubusercontent.com/50046577/93751649-cc26fd80-fbd3-11ea-893f-a791987c7026.png">
+<img width="785" alt="grid" src="https://user-images.githubusercontent.com/50046577/93751660-d0531b00-fbd3-11ea-8386-4543e772f244.png">
+</h1>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Página exemplo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [**marvel-app**](https://marvel-app-chi.vercel.app/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Como instalar
 
-## Learn More
+<strong>1.</strong> Obtenha sua api de desenvolvedor [**api key**](https://developer.marvel.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<strong>2.</strong> Clonar o projeto e instalar as dependências
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ git clone https://github.com/cleicastro/marvel-app.git
+$ cd MarvelAPP
+$ npm install
+```
+
+<strong>3.</strong> Renomeie o arquivo .env.example para .env e coloque sua chave pública e hash
+
+obs: [**md5 hash generator**](https://passwordsgenerator.net/md5-hash-generator/)
+
+```
+# PUBLIC API KEY
+API_KEY=
+
+# HASH - (timestamp + private key + public api key)
+HASH=
+
+# Timestamp - use the same hash timestamp
+TIMESTAMP=
+
+
+```
+
+# Autor
+
+- [**Cleidenilson Castro**](https://www.linkedin.com/in/clei-castro-5a7b89185/)
